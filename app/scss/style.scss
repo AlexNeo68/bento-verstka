@@ -119,6 +119,35 @@ body{
   }
 }
 
+.top {
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 2rf;
+    grid-template-rows: 250px 500px;
+    gap: 20px;
+  }
+  &__about {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    background-image: url('../images/top-about-bg.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  &__info {}
+  &__info-title {}
+  &__info-text {}
+  &__slogan {}
+  &__slogan-title {}
+  &__slogan-img {}
+  &__promo {}
+  &__promo-title {}
+  &__promo-text {}
+  &__promo-img {}
+  &__promo-btn {}
+}
+
+
+
 
 
 @import 'media';
